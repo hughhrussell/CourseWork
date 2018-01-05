@@ -1,0 +1,28 @@
+
+<template name="weatherTable">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Local Temperature</th>
+                    <th>Local Humidity</th>
+                    <th>Weather</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each weather}}
+                    {{> weatherRow}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="weatherRow">
+    <tr>
+        <td>{{tempc}}</td>
+        <td>{{humidity}}</td>
+        <td>{{weather}}</td>
+
+    </tr>
+</template>
